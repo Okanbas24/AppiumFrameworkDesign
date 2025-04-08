@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <groups>
+        <run>
+            <include name="Smoke"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="org.okan_bas.TestUtils.Listeners"></listener>
+    </listeners>
+    <test thread-count="5" name="End to End">
+        <classes>
+            <class name="org.okan_bas.scripts.commerceTc03"/>
+            <class name="org.okan_bas.scripts.commerceTc02"/>
+            <class name="org.okan_bas.scripts.commerceTc01"/>
+        </classes>
+    </test>
+</suite>
