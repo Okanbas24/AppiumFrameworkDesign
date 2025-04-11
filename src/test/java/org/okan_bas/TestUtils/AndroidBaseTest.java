@@ -31,7 +31,6 @@ public class AndroidBaseTest extends AppiumUtils {
 
     /**
      * Configures Appium server and initializes test environment before test class execution
-     *
      * @throws IOException          If properties file cannot be read
      * @throws InterruptedException If thread operations are interrupted
      */

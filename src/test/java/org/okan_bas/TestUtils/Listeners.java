@@ -9,7 +9,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import java.io.File;
+
 import java.io.IOException;
 
 public class Listeners extends AppiumUtils implements ITestListener{
@@ -51,9 +51,9 @@ public class Listeners extends AppiumUtils implements ITestListener{
 
         } catch (Exception e) {
             System.err.println("Failed to capture screenshot: " + e.getMessage());
+
         }
     }
-
 
 
     @Override
@@ -79,6 +79,6 @@ public class Listeners extends AppiumUtils implements ITestListener{
         // TODO Auto-generated method stub
         extent.flush();
     }
-//
+
 
 }

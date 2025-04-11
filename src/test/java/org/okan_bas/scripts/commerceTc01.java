@@ -3,7 +3,6 @@ package org.okan_bas.scripts;
 
 import org.okan_bas.TestUtils.AndroidBaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -20,6 +19,7 @@ public class commerceTc01 extends AndroidBaseTest {
       {
          formPage.setActivity();
       }
+
 
     @Test()
     public void FillForm_ErrorValidation() throws MalformedURLException, InterruptedException {

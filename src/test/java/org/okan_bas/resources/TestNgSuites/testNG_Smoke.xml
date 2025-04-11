@@ -7,13 +7,9 @@
         </run>
     </groups>
     <listeners>
-        <listener class-name="org.okan_bas.TestUtils.Listeners"></listener>
+        <listener class-name="org.okan_bas.TestUtils.Listeners"/>
     </listeners>
     <test thread-count="5" name="End to End">
         <classes>
-            <class name="org.okan_bas.scripts.commerceTc03"/>
-            <class name="org.okan_bas.scripts.commerceTc02"/>
-            <class name="org.okan_bas.scripts.commerceTc01"/>
+            <class name="org.okan_bas. "/>
         </classes>
-    </test>
-</suite>

@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.example</groupId>
     <artifactId>AppiumFramework</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -67,9 +66,7 @@
             <version>24.1.0</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -79,10 +76,7 @@
             </plugin>
         </plugins>
     </build>
-
-
     <profiles>
-
         <profile>
             <id>Regression</id>
             <build>
@@ -93,14 +87,13 @@
                         <version>3.5.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/testNGSuites/testng.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/java/org/okan_bas/resources/testNGSuites/testng.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
                 </plugins>
             </build>
         </profile>
-
         <profile>
             <id>Smoke</id>
             <build>
@@ -119,5 +112,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>
